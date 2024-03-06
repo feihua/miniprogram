@@ -5,14 +5,24 @@
     "ignore": [],
     "include": []
   },
+  "miniprogramRoot": "miniprogram/",
   "setting": {
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./miniprogram"
+      }
+    ],
+    "useCompilerPlugins": [
+      "sass"
+    ],
     "coverView": true,
     "es6": true,
     "postcss": true,
     "minified": true,
     "enhance": true,
     "showShadowRootInWxmlPanel": true,
-    "packNpmRelationList": [],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -24,5 +34,6 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "appid": "wx3e0948664c90bd9a"
+  "appid": "wx3e0948664c90bd9a",
+  "srcMiniprogramRoot": "miniprogram/"
 }
