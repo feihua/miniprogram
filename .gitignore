@@ -1,0 +1,10 @@
+node_modules/
+miniprogram/miniprogram_npm
+
+/package-lock.json
+/project.private.config.json
+
+.DS_Store
+$node_modules/
+.history/
+**/dist
