@@ -1,0 +1,90 @@
+.address-info {
+  padding: 0 16rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+
+  .row {
+    display: flex;
+    font-size: 28rpx;
+    line-height: 50rpx;
+    padding: 24rpx 10rpx;
+    position: relative;
+    border-bottom: 1rpx solid #ddd;
+	align-items: center;
+
+    &:last-child {
+      border: none;
+    }
+
+    switch {
+      position: absolute;
+      right: -10rpx;
+      transform: scale(0.7) translateY(-6px);
+    }
+
+    .region {
+      color: #333;
+    }
+
+    .placeholder {
+      color: #969799;
+    }
+
+    .title {
+      width: 190rpx;
+      color: #333;
+    }
+
+    input,
+    picker,
+    textarea {
+      flex: 1;
+    }
+  }
+}
+
+.button {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 30rpx 20rpx;
+  color: #fff;
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  background-color: #f3514f;
+}
+
+.item-tag .tag-name {
+  display: inline-block;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #777;
+  padding: 0rpx 10rpx;
+  border: 1px solid #777;
+  margin-left: 16rpx;
+  border-radius: 6rpx;
+
+  &.active {
+    color: #fff;
+    border: 1px solid #f3514f;
+    background-color: #f3514f;
+  }
+
+  &:first-of-type {
+    margin-left: 0rpx;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  margin: -24rpx -12rpx -24rpx 0rpx;
+
+  text {
+    font-size: 22rpx;
+    color: #777;
+    margin-left: 6rpx;
+  }
+}

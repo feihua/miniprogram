@@ -1,0 +1,23 @@
+/* pages/goods/list/index.wxss */
+
+.container {
+  padding-top: 0rpx !important;
+}
+
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .finish {
+    height: 80rpx;
+    line-height: 80rpx;
+    display: block !important;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    color: #f3514f;
+    border-top: 1rpx solid #ccc;
+    font-size: 28rpx;
+  }
+}

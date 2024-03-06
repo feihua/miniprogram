@@ -1,0 +1,43 @@
+<!--pages/address/list/index.wxml-->
+
+<view class="container address-list">
+  <view class="list-warpper" wx:if="{{ addressList.length }}">
+    <view wx:for="{{ addressList }}" wx:key="index" class="list-item">
+      <van-swipe-cell right-width="{{ 65 }}">
+        <van-cell-group border="{{ false }}">
+          <view class="list-item-box">
+            <view class="info">
+              <view class="user-info">
+                <text>测试用户</text>
+                <text>176****5678</text>
+                <text class="default-tag">默认</text>
+              </view>
+
+              <view class="address-info">
+                甘肃省甘南藏族自治州碌曲县松日鼎盛大厦0层
+              </view>
+            </view>
+
+            <view class="editBtn" bindtap="toEdit">
+              <van-icon name="edit" size="22px" color="#999" />
+            </view>
+          </view>
+        </van-cell-group>
+        <!-- <van-icon name="delete" size="22px" color="#999" /> -->
+        <view slot="right" class="van-swipe-cell__right">
+          <text>删除</text>
+        </view>
+      </van-swipe-cell>
+    </view>
+  </view>
+
+  <van-empty wx:else description="还没有收货地址，快去添加吧～" />
+
+  <view class="footer">
+    <view class="btn">
+      <navigator url="/modules/settingModule/pages/address/add/index">
+        新增地址
+      </navigator>
+    </view>
+  </view>
+</view>

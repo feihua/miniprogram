@@ -1,0 +1,28 @@
+<view>
+  <view class="category-container">
+    <!-- 左侧的滚动视图区域 -->
+    <scroll-view class="category-left-view" scroll-y>
+      <!-- 一级分类 -->
+      <view class="left-view-item active"> 爱礼精选 </view>
+      <view class="left-view-item"> 鲜花玫瑰 </view>
+      <view class="left-view-item"> 永生玫瑰 </view>
+      <view class="left-view-item"> 玫瑰珠宝 </view>
+    </scroll-view>
+
+    <!-- 右侧的滚动视图区域 -->
+    <scroll-view class="category-right-view" scroll-y>
+      <!-- 二级分类 -->
+      <view class="test">
+        <view wx:for="{{ 10 }}" wx:key="index" class="right-view-item">
+          <navigator
+            class="navigator"
+            url="/pages/goods/list/list?category2Id=1"
+          >
+            <image class="" src="../../assets/images/cate-1.png"></image>
+            <text class="goods_item_name">真情告白</text>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

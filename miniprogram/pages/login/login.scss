@@ -1,0 +1,16 @@
+/* pages/login/login.wxss */
+
+.van-empty__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.van-empty__image__img {
+  width: 180rpx !important;
+  height: 180rpx !important;
+}
+
+.van-empty__description {
+  margin-top: -40rpx !important;
+}

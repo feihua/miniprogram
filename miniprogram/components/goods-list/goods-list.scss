@@ -1,0 +1,36 @@
+/* components/goodsList/goodsList.wxss */
+.goods_title {
+  text-align: center;
+  font-size: 40rpx;
+  line-height: 52rpx;
+  font-weight: bold;
+  color: #232628;
+  padding: 20rpx 0 0rpx 0rpx;
+}
+
+.goods_card_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods_card_list::after {
+  content: '';
+  width: 350rpx;
+}
+
+.goods_more {
+  margin: 20rpx 0;
+}
+
+.goods_more_btn {
+  display: block;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(35, 38, 40, 0.7);
+}

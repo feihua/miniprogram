@@ -1,0 +1,42 @@
+.index-container {
+  position: relative;
+  
+  // 首页背景图
+  .window-bgc {
+    height: 200rpx;
+    position: absolute;
+    width: 100%;
+    background-color: #f3514f;
+    border-radius: 0 0 20rpx 20rpx;
+  }
+
+  .adver {
+    display: flex;
+    width: 100%;
+    padding: 10rpx 8rpx;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 18rpx;
+    overflow: hidden;
+
+    .adver-left {
+      width: 50%;
+      padding: 8rpx 8rpx 0rpx 8rpx;
+    }
+
+    .adver-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 8rpx 8rpx 0rpx 8rpx;
+
+      view:last-child {
+        padding-top: 8rpx;
+      }
+    }
+
+    image {
+      width: 100%;
+    }
+  }
+}

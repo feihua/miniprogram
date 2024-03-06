@@ -1,0 +1,118 @@
+/* pages/profile/profile.wxss */
+
+.avatar image {
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+  top: 18rpx;
+  left: 16rpx;
+  border-radius: 50%;
+}
+
+.setting-list {
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+  padding-right: 50rpx;
+
+  &::after {
+    content: '\e65f';
+    font-family: 'iconfont';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    font-size: 24rpx;
+    transform: translateY(-50%);
+    color: #999;
+    padding-right: 12rpx;
+  }
+
+  text:first-child {
+    // font-weight: 500;
+    color: #333;
+    font-size: 30rpx;
+  }
+}
+
+// 头像
+.avatar-container {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+// 昵称
+.nickname {
+  padding-right: 60rpx;
+  color: #333;
+  font-size: 30rpx;
+}
+
+button {
+  background-color: #fff;
+}
+
+button:after {
+  border: none;
+}
+
+button[type='primary'] {
+  background-color: #fff !important;
+  color: #fa4126;
+  font-size: 34rpx;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+
+  .btn {
+    width: 76%;
+    line-height: 80rpx;
+    font-weight: bold;
+    font-size: 28rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    background-color: #fa4126;
+    color: #ffffff;
+  }
+}
+
+/* 更新用户昵称 */
+.van-field__control {
+  border: 1px solid #efefef !important;
+  min-height: 60rpx !important;
+  line-height: 60rpx !important;
+  margin: 16rpx !important;
+  padding-left: 20rpx !important;
+  border-radius: 16rpx;
+}
+
+// 更新用户名
+.dialog-content {
+  display: flex;
+
+  .cancel {
+    color: #333;
+    font-size: 34rpx;
+  }
+}
+
+.input-name {
+  border: 1px solid #ccc;
+  margin: 40rpx 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 16rpx;
+  padding: 6rpx 12rpx;
+  padding-left: 20rpx;
+}

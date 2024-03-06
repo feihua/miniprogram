@@ -1,0 +1,91 @@
+<view class="container goods-detail">
+  <!-- 商品大图 -->
+  <view class="banner-img">
+    <image class="img" src="/assets/images/floor-img.jpg" />
+  </view>
+
+  <!-- 商品的基本信息 -->
+  <view class="content">
+    <view class="price">
+      <view class="price-num">¥299</view>
+      <view class="price-origin-num">¥399</view>
+    </view>
+    <view class="title">亲爱的/情人节网红款/19枝亲爱的/情人节网红款</view>
+    <view class="desc">用最温暖的最有情的心意，用最温暖的最有情的心意</view>
+  </view>
+
+  <!-- 商品的详细信息 -->
+  <view class="detail">
+    <image class="img" mode="widthFix" src="/assets/images/floor-img.jpg" />
+    <image class="img" mode="widthFix" src="/assets/images/floor-img.jpg" />
+    <image class="img" mode="widthFix" src="/assets/images/floor-img.jpg" />
+  </view>
+
+  <!-- 商品的底部商品导航 -->
+  <van-goods-action>
+    <navigator url="/pages/index/index" open-type="switchTab">
+      <van-goods-action-icon icon="wap-home-o" text="首页" />
+    </navigator>
+    <navigator url="/pages/cart/cart" open-type="switchTab">
+      <van-goods-action-icon icon="cart-o" text="购物车" info="{{ allCount }}" />
+    </navigator>
+    <van-goods-action-icon
+      open-type="contact"
+      icon="chat-o"
+      text="客服"
+      bind:click="onClickIcon"
+    />
+    <van-goods-action-button text="加入购物车" type="warning" bindtap="handleAddcart" />
+    <van-goods-action-button text="立即购买" bindtap="handeGotoBuy" />
+  </van-goods-action>
+
+  <!-- 加入购物车、立即购买弹框 -->
+  <!-- show 控制弹框的隐藏和展示 -->
+  <!-- bind:close 点击关闭弹框时触发的回调 -->
+  <van-action-sheet show="{{ show }}" bind:close="onClose">
+    <view class="sheet-wrapper">
+      <view class="goods-item">
+        <!-- 需要购买的商品图片 -->
+        <view class="mid">
+          <image class="img" src="/assets/images/floor-img.jpg" />
+        </view>
+
+        <!-- 商品基本信息 -->
+        <view class="right">
+          <!-- 商品名字 -->
+          <view class="title"> 亲爱的/情人节网红款/19枝 </view>
+          <!-- 商品价格 -->
+          <view class="buy">
+            <view class="price">
+              <view class="symbol">¥</view>
+              <view class="num">100</view>
+            </view>
+
+            <!-- 步进器组件控制购买数量 -->
+            <view class="buy-btn">
+              <!-- Stepper 步进器，由增加按钮、减少按钮和输入框组成，控制购买数量 -->
+              <van-stepper value="{{ count }}" bind:change="onChangeGoodsCount" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 祝福语输入框 -->
+      <view class="time-wraper">
+        <view class="title">祝福语</view>
+        <textarea
+          model:value="{{ blessing }}"
+          bindinput="onTextAreaChange"
+          class="form-textarea"
+          placeholder="必填，写上您的祝福语，给心爱的他（她）送上你的祝福（请勿填写特殊符号或表情符号）"
+          name="textarea"
+        />
+      </view>
+
+      <!-- 确定按钮 -->
+      <view class="sheet-footer-btn">
+        <van-button block type="primary" round> 确定 </van-button>
+      </view>
+    </view>
+  </van-action-sheet>
+</view>

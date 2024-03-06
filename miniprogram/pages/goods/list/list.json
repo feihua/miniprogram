@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goods-card": "/components/goods-card/goods-card"
+  },
+  "navigationBarTitleText": "商品列表"
+}

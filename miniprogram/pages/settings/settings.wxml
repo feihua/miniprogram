@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="setting-list">
+    <navigator
+      url="/pages/profile/profile"
+      hover-class="none"
+      class="setting-item"
+    >
+      修改个人资料
+    </navigator>
+  </view>
+
+  <!-- 操作列表 -->
+  <view class="setting-list">
+    <navigator
+      url="/pages/address/list/index"
+      hover-class="none"
+      class="setting-item"
+    >
+      我的收货地址
+    </navigator>
+  </view>
+
+  <view class="setting-list concat">
+    <button hover-class="none" class="setting-item" open-type="feedback">
+      问题反馈
+    </button>
+    <button hover-class="none" class="setting-item" open-type="contact">
+      联系我们
+    </button>
+    <button hover-class="none" class="setting-item" open-type="openSetting">
+      授权信息
+    </button>
+  </view>
+</view>

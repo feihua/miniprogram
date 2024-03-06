@@ -1,0 +1,14 @@
+<view class="nav-list">
+  <!-- 一级分类导航容器 -->
+  <view
+    wx:for="{{ 10 }}"
+    wx:key="index"
+    class="nav-item {{ index >= 5 ? 'small' : '' }}"
+  >
+    <!-- 导航链接 -->
+    <navigator class="navigator-nav" url="/pages/goods/list/list?category1Id=1">
+      <image class="nav-img" src="../../../assets/images/cate-1.png" />
+      <text class="nav-text">鲜花玫瑰</text>
+    </navigator>
+  </view>
+</view>

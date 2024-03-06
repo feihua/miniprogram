@@ -1,4 +1,8 @@
 {
   "usingComponents": {
-  }
+    "goods-list": "/components/goods-list/goods-list",
+    "entrance": "./entrance/entrance",
+    "banner": "./banner/banner"
+  },
+  "navigationBarTitleText": "慕尚花坊"
 }

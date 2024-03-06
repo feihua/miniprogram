@@ -1,0 +1,138 @@
+/* pages/address/list/index.wxss */
+
+page {
+  height: 100%;
+}
+
+.address-list {
+  width: 750rpx;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.list-item .list-item-box {
+  display: flex;
+
+  .editBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rpx;
+  }
+}
+
+.fullAddress {
+  font-size: 26rpx;
+  color: rgb(100, 100, 100);
+}
+
+.address-info {
+  font-size: 26rpx;
+  color: #333;
+  margin: 26rpx 0rpx 0rpx 0rpx;
+}
+
+.user-info {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 30rpx;
+  font-weight: 500;
+
+  text {
+    margin: 0rpx 6rpx;
+
+    &:first-child {
+      margin: 0rpx;
+    }
+  }
+}
+
+.list-warpper {
+  background-color: #fff;
+  border-radius: 14rpx;
+  margin-bottom: 44rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+
+  .list-item {
+    align-items: center;
+    padding: 40rpx 18rpx;
+    justify-content: space-between;
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0rpx 8rpx;
+      background: #f0f1ff;
+      color: #5a66ff;
+    }
+
+    .default-tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0rpx 8rpx;
+      background: #ffece9;
+      color: #fa4126;
+      margin-left: 4px;
+    }
+
+    &:not(:last-child) {
+      // border-bottom: red 2rpx solid;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(229, 229, 229);
+    }
+
+    .info {
+      // margin-right: 32rpx;
+      width: 86%;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130rpx;
+
+  .btn {
+    width: 76%;
+    line-height: 80rpx;
+    font-weight: bold;
+    font-size: 28rpx;
+    text-align: center;
+    border-radius: 40rpx;
+    background-color: #f3514f;
+    color: #ffffff;
+  }
+}
+
+.van-icon-edit,
+.van-icon-delete {
+  font-size: 36rpx !important;
+}
+
+.van-icon-delete {
+  margin-left: 14rpx;
+}
+
+.van-swipe-cell {
+  width: 100% !important;
+}
+
+.van-swipe-cell__right {
+  background-color: #fa4126;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132rpx;
+  height: 100%;
+  color: #fff;
+  font-size: 24rpx;
+  padding-left: -2rpx;
+}

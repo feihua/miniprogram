@@ -1,0 +1,116 @@
+/* pages/order/list/index.wxss */
+
+.list-flex {
+  display: flex;
+}
+
+.order-item {
+  margin-top: 16rpx;
+  padding: 24rpx 32rpx 24rpx;
+  background-color: white;
+  border-radius: 14rpx;
+
+  &:first-child {
+    margin: 0rpx;
+  }
+
+  .order-item-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24rpx;
+  }
+}
+
+.orderno {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  line-height: 40rpx;
+
+  .no {
+    margin-left: 6px;
+  }
+}
+
+.order-status {
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+
+.order-active {
+  color: #fa4126;
+}
+
+.goods-item {
+  padding: 16rpx 0;
+
+  .left {
+    width: 176rpx;
+    height: 176rpx;
+    background: #333333;
+  }
+
+  .mid {
+    flex: 1;
+    margin: 0 12px;
+
+    .goods-name {
+      font-size: 28rpx;
+      color: #333;
+      line-height: 40rpx;
+      font-weight: 400;
+    }
+
+    .goods-blessing {
+      font-size: 24rpx;
+      height: 32rpx;
+      line-height: 32rpx;
+      color: #999999;
+      margin: 8rpx 0;
+    }
+  }
+
+  .right {
+    .goods-price {
+      white-space: nowrap;
+      color: #fa4126;
+      font-size: 24rpx;
+      line-height: 48rpx;
+    }
+
+    .goods-count {
+      white-space: nowrap;
+      order: 4;
+      text-align: right;
+      font-size: 24rpx;
+      color: #999;
+      margin: 20rpx 0 0 auto;
+    }
+  }
+}
+
+.order-item-footer {
+  .total-amount {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 28rpx;
+    line-height: 40rpx;
+    color: #333333;
+    margin-right: 4px;
+  }
+
+  .price {
+    font-size: 32rpx;
+    color: #fa4126;
+    font-weight: bold;
+
+    text {
+      font-weight: normal;
+    }
+  }
+}

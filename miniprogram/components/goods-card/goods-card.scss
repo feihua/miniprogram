@@ -1,0 +1,76 @@
+/* components/goods-card/goods-card.wxss */
+
+.goods_cart_container {
+  width: 350rpx;
+  margin-top: 18rpx;
+  background: #fff;
+  border-radius: 18rpx;
+}
+
+.good_img {
+  width: 100%;
+  max-height: 360rpx;
+  border-top-left-radius: 16rpx;
+  border-top-right-radius: 16rpx;
+}
+
+.goods_item_info {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 20rpx;
+}
+
+.goods_item_info .goods_item_info_name {
+  font-weight: 600;
+  font-size: 30rpx;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods_item_info .goods_item_info_promo {
+  padding-top: 20rpx;
+  padding-bottom: 3px;
+  font-size: 12px;
+  color: #71797f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods_item_info_bottom {
+  display: flex;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+}
+
+.goods_item_info_bottom .goods_image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.goods_item_info_price {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #f3514f;
+}
+
+.goods_item_info_price .text {
+  font-size: 24rpx;
+  padding-right: 4rpx;
+  font-weight: normal;
+}
+
+.goods_item_info_origin_price {
+  flex: 1;
+  font-size: 20rpx;
+  color: #71797f;
+  text-decoration-line: line-through;
+  margin-left: 6%;
+  margin-top: 4rpx;
+}
+
+.goods_item_info_origin_price .text {
+  font-size: 20rpx;
+}

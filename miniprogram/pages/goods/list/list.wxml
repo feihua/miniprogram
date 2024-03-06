@@ -1,0 +1,23 @@
+<!--pages/goods/list/index.wxml-->
+
+<view class="container">
+  <!-- 商品列表功能 -->
+  <view class="goods-list">
+    <block>
+      <goods-card></goods-card>
+      <goods-card></goods-card>
+      <goods-card></goods-card>
+      <goods-card></goods-card>
+    </block>
+
+    <!-- 数据是否加载完毕 -->
+    <view class="finish" hidden="{{ !isFinish }}">数据加载完毕~~~</view>
+  </view>
+
+  <!-- 商品为空的时候展示的结构 -->
+  <!-- <van-empty description="该分类下暂无商品，去看看其他商品吧～">
+    <van-button round type="danger" class="bottom-button" bindtap="gotoBack">
+      查看其他商品
+    </van-button>
+  </van-empty> -->
+</view>

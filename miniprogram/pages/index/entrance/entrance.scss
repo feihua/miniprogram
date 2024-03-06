@@ -1,0 +1,41 @@
+/* pages/index/entrance/entrance.wxss */
+
+/* 导航分类样式 */
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20rpx 0rpx;
+  border-radius: 18rpx;
+  padding: 10px 0;
+  background-color: #fff;
+
+  .nav-item {
+    flex: 1;
+    min-width: 20%;
+    max-width: 20%;
+
+    &.small {
+      margin-top: 36rpx;
+    }
+
+    .navigator-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      .nav-text {
+        margin-top: 4px;
+        font-size: 12px;
+      }
+
+      .nav-img {
+        width: 66rpx;
+        height: 66rpx;
+      }
+    }
+  }
+}

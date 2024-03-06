@@ -1,0 +1,192 @@
+/* pages/order/index.wxss */
+
+.detail-flex {
+  display: flex;
+}
+
+.order {
+  padding-bottom: 130rpx;
+}
+
+// 收货地址卡片
+.address-card {
+  background-color: #fff;
+  border-radius: 14rpx;
+  overflow: hidden;
+
+  // 添加收货地址
+  .add-address {
+    display: flex;
+    height: 140rpx;
+    line-height: 140rpx;
+    justify-content: center;
+
+    view {
+      padding-left: 14rpx;
+    }
+  }
+
+  // 收货地址样式
+  .order-address {
+    justify-content: space-between;
+    padding: 24rpx 32rpx;
+
+    .title {
+      display: flex;
+      align-items: center;
+      // height: 60rpx;
+      font-size: 28rpx;
+      font-weight: normal;
+      color: #333333;
+      line-height: 40rpx;
+    }
+
+    .info {
+      height: 60rpx;
+      font-size: 28rpx;
+      font-weight: normal;
+      color: #333333;
+      line-height: 40rpx;
+      margin-top: 20rpx;
+
+      text {
+        &:first-child {
+          margin-right: 16rpx;
+        }
+      }
+    }
+
+    .select-address .navigator {
+      width: 100%;
+      height: 100%;
+      width: 80rpx;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}
+
+.order-info,
+.goods-wraper {
+  background-color: white;
+  padding: 24rpx 0rpx;
+  margin-top: 20rpx;
+  border-radius: 14rpx;
+}
+
+.goods-wraper {
+  padding: 10rpx 24rpx;
+
+  .goods-list {
+    padding: 12px 0;
+
+    .goods-item {
+      display: flex;
+      margin-bottom: 14px;
+
+      .img {
+        width: 64px;
+        height: 69px;
+
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .content {
+        flex: 1;
+        margin: 0 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .goods-title {
+          font-size: 14px;
+          color: #333;
+        }
+      }
+
+      .goods-price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 30rpx;
+      }
+    }
+  }
+}
+
+.form-textarea {
+  border-radius: 12px;
+  background-color: #f7f8fa;
+  padding: 16px 12px;
+  font-size: 13px;
+  margin-top: 12px;
+  width: 94%;
+  height: 84px;
+  color: #333;
+}
+
+// 提交订单面板
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 112rpx;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+
+  .left {
+    color: #fa4126;
+    font-weight: bold;
+    font-size: 50rpx;
+    line-height: 88rpx;
+    margin-left: 16px;
+  }
+
+  .right {
+    height: 80rpx;
+    width: 240rpx;
+    border-radius: 40rpx;
+    background-color: #fa4126;
+    color: #ffffff;
+    line-height: 80rpx;
+    font-weight: bold;
+    font-size: 28rpx;
+    text-align: center;
+    margin-right: 16px;
+  }
+}
+
+// 覆盖 Vant 组件的样式
+.van-field__control {
+  text-align: right !important;
+  color: #333333 !important;
+  padding-right: 8rpx !important;
+}
+
+// 外部样式类
+.filed-label {
+  color: #333333 !important;
+  width: 400rpx !important;
+}
+
+.input-class {
+  color: #333333 !important;
+}
+
+.van-cell__value {
+  color: #969799 !important;
+}
+
+.van-hairline--top-bottom:after {
+  border: none !important;
+}
+
+.van-cell__title {
+  max-width: none !important;
+}

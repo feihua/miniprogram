@@ -1,0 +1,26 @@
+<!--components/goods-list/goods-list.wxml-->
+
+<!-- 商品列表组件 -->
+<view class="goods_container">
+  <!-- 标题 -->
+  <view class="goods_title">{{title}}</view>
+
+  <!-- 列表区域 -->
+  <view class="goods_card_list">
+    <block wx:for="{{ 3 }}" wx:key="index">
+      <goods-card></goods-card>
+    </block>
+  </view>
+
+  <!-- 查看更多 -->
+  <view class="goods_more">
+    <navigator
+      class="goods_more_btn"
+      url="/pages/goods/list/list"
+      hover-class="navigator-hover"
+      open-type="navigate"
+    >
+      查看更多
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/index/banner/banner.wxml-->
+<!-- 轮播图 -->
+<view class="swiper-box">
+  <swiper
+    autoplay
+    class="swiper"
+    indicator-active-color="#FF734C"
+    interval="2000"
+    duration="1000"
+    indicator-color="rgba(0, 0, 0, .3)"
+  >
+    <block wx:for="{{ bannerList }}" wx:key="index">
+      <swiper-item class="swiper-item">
+        <navigator
+          class="navigator"
+          url="/pages/goods/detail/detail?goodsId=id"
+        >
+          <image class="img" src="{{ item }}"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 轮播图的面板指示点，因为面板指示点不支持，所以我们只能通过自定义结构的方式 -->
+  <view class="indicator">
+    <!-- active 类名：当前被激活的面板指示点颜色 -->
+    <!-- rectangle 类名：默认的面板指示点颜色 -->
+    <text
+      wx:for="{{bannerList.length}}"
+      wx:key="id"
+      class="{{ 'active rectangle' }}"
+    ></text>
+  </view>
+</view>

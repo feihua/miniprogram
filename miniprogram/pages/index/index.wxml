@@ -1,2 +1,39 @@
-<!--index.wxml-->
-<view>首页</view>
+<view class="index-container">
+  <!--首页背景图-->
+  <view class="window-bgc"></view>
+
+  <!-- 页面主体区域 -->
+  <view class="container">
+    <!-- 轮播图区域 -->
+    <banner />
+
+    <!-- 导航分类 -->
+    <entrance />
+
+    <!-- 广告区域 -->
+    <view class="adver">
+      <view class="adver-left">
+        <navigator url="/pages/goods/list/list?category2Id=1">
+          <image src="/assets/images/love.jpg" mode="widthFix" />
+        </navigator>
+      </view>
+
+      <view class="adver-right">
+        <view>
+          <navigator url="/pages/goods/list/list?category2Id=2">
+            <image src="/assets/images/elder.jpg" mode="widthFix" />
+          </navigator>
+        </view>
+        <view>
+          <navigator url="/pages/goods/list/list?category2Id=3">
+            <image src="/assets/images/friend.jpg" mode="widthFix" />
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <!-- 商品列表 -->
+    <goods-list title="猜你喜欢"></goods-list>
+    <goods-list title="人气推荐"></goods-list>
+  </view>
+</view>

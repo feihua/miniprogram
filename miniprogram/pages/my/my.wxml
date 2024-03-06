@@ -1,0 +1,80 @@
+<!--pages/info/info.wxml-->
+<view class="container">
+  <!-- 顶部展示图 -->
+  <view class="top-show">
+    <image
+      mode="widthFix"
+      class="top-show-img"
+      src="/assets/images/banner.jpg"
+    ></image>
+  </view>
+
+  <view class="bottom-show">
+    <!-- 未登录面板 -->
+    <view class="user-container section" bindtap="toLoginPage">
+      <view class="avatar-container">
+        <image src="/assets/images/avatar.png"></image>
+        <view class="no-login">
+          <text class="ellipsis">未登录</text>
+          <text>点击授权登录</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 登录以后得面板 -->
+    <!-- <view class="user-container section">
+      <view class="avatar-container">
+        <image src="/assets/images/avatar.png"></image>
+        <view class="no-login">
+          <text class="ellipsis">用户昵称</text>
+        </view>
+      </view>
+      <view class="setting">
+        <navigator url="/pages/settings/settings"> 设置 </navigator>
+      </view>
+    </view> -->
+
+    <!-- 订单面板 -->
+    <view class="order section">
+      <view class="order-title-wrap">
+        <text class="title">我的订单</text>
+        <text class="more">查看更多></text>
+      </view>
+
+      <view class="order-content-wrap">
+        <view class="order-content-item" wx:for="{{ initpanel }}">
+          <navigator url="{{ item.url }}">
+            <view class="iconfont {{ item.iconfont }}"></view>
+            <text>{{ item.title }}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <!-- 关于售前售后服务面板 -->
+    <view class="after-scale section">
+      <view class="order-title-wrap">
+        <text class="title">关于售前售后服务</text>
+      </view>
+      <view class="after-scale-item">
+        <view class="iconfont icon-kefufenxiermaikefu"></view>
+        <text>可与小程序客服实时聊天或电话咨询</text>
+      </view>
+      <view class="after-scale-item">
+        <view class="iconfont icon-shijian"></view>
+        <text>小程序客服工作时间为: 8:30 ~ 20:30</text>
+      </view>
+      <view class="after-scale-item">
+        <view class="iconfont icon-dizhiguanli"></view>
+        <text>鲜花制作完毕情况下暂不支持退款</text>
+      </view>
+      <view class="after-scale-item">
+        <view class="iconfont icon-zhangben"></view>
+        <text>鲜花可以提前7-15天预订重大节假日不支持定时配送</text>
+      </view>
+    </view>
+
+    <!-- 底部面板 -->
+    <view class="info-footer"> 尚硅谷技术支持 </view>
+  </view>
+</view>
