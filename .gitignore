@@ -8,3 +8,4 @@ miniprogram/miniprogram_npm
 $node_modules/
 .history/
 **/dist
+.idea
