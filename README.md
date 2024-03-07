@@ -62,8 +62,7 @@
 
 13. `mobx-miniprogram`：使用 `mobx-miniprogram` 进行项目状态的管理
 
-
-
+![image-20240307174916243](README.assets/image-20240307174916243.png)
 
 
 
