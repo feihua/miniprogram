@@ -1,13 +1,16 @@
 // 导入模块、包提供的类
-import WxRequest from 'mina-request'
+import WxRequest from './request'
 // 导入封装的本地存储操作模块
 import { getStorage, clearStorage } from './storage'
 // 导入封装的增强 API
 import { toast, modal } from './extendApi'
 
+// 导入环境
+import {env} from './env'
+
 // 对类进行实例化
 const instance = new WxRequest({
-  baseURL: 'https://gmall-prod.atguigu.cn/mall-api',
+  baseURL: env.baseURL,
   timeout: 15000
 })
 
@@ -61,7 +64,7 @@ instance.interceptors.response = async (response) => {
   // 业务状态码 === 208，没有 token 或者 token 失效，需要让用户重新进行登录
   // 业务状态码既不等于 200，也不等于 208，说明出现了其他异常，需要给用户统一进行提示
   switch (data.code) {
-    case 200:
+    case 0:
       // 接口调用成功，服务器成功返回了数据，只需要将数据简化以后返回即可
       return data
 
